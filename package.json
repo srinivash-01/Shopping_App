@@ -1,0 +1,21 @@
+{
+  "name": "shopingapp",
+  "version": "1.0.0",
+  "description": "ShoppingApp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Srinivash",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "body-parser": "^1.19.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "jsdom": "^19.0.0",
+    "mongoose": "^6.2.3",
+    "node-localstorage": "^2.2.1",
+    "popups": "^1.1.3"
+  }
+}

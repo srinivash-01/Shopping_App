@@ -1,0 +1,93 @@
+<%- include("header") -%>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-white rounded" style="padding: 1.5rem;">
+  <a class="navbar-brand" href="#">
+    <img src="/images/img1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Storify
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="padding-left: 2rem; padding-right: 1rem;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Top Offers
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" style="padding-left: 2rem; padding-right: 1rem;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Grocery
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown" data-hover="dropdown" data-toggle="dropdown">
+        <a class="nav-link dropdown-toggle" style="padding-left: 2rem; padding-right: 1rem;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mobiles
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown" data-hover="dropdown" data-toggle="dropdown">
+        <a class="nav-link dropdown-toggle" style="padding-left: 2rem; padding-right: 1rem;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Fasion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <div class="container-fluid">
+        <!-- <i class="fas fa-globe" style="margin-right: 28px;"></i> -->
+        <% if(!email){ %>
+          <button type="button" class="btn btn-outline-secondary" style="padding-right: 30px; padding-left: 30px;"  onclick="location.href='/signup'">Sign in</button>
+        <% }else{ %>
+          <img class="testimonial-image" src="images/angela.png" onclick="#">
+        <% }; %>
+
+      </div>
+
+    </form>
+  </div>
+</nav>
+
+<section class="colored-section" id="cta">
+
+  <div class="container-fluid home_content">
+    <form  action="/signup" method="post">
+      <h3 class="big-heading">Buy Best Products, with us. <br> Enjoy the Qualiy of us..</h3>
+      <% if(!email){ %>
+        <button class="download-button btn btn-lg btn-dark" type="button" onclick="location.href='/signup'"> Sign in</button>
+        <button class="download-button btn btn-lg brn-light btn-outline-dark" type="button" onclick="location.href='/signup'"> Sign up</button>
+      <% }; %>
+
+    </form>
+
+  </div>
+</section>
+
+
+
+
+
+<%- include("footer") -%>
